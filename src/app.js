@@ -18,7 +18,7 @@ const students = [
  
 function scholarship(stuList) {
     const studentsScholarship = []  
-    for (var i of stuList) {
+    for (const i of stuList) {
         i.grades = i.grades.reduce((a,b) => a + b, 0) / i.grades.length; {
             if (i.grades >= 80) {
                 i.gradeAvg = i.grades;
@@ -34,7 +34,7 @@ console.log(scholarship(students))
 //part 4
 
 function darkMode() {
-    const dark = document.querySelector('div')
+    const dark = document.querySelector('.light-theme')
     dark.classList.add('dark-theme')
 }
 
